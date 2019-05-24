@@ -3,7 +3,6 @@
 *.map
 
 # Add the entire Grav site to GitHub
-# https://getgrav.org/blog/developing-with-github-part-2
 composer.lock
 backup/*
 !backup/.*
@@ -20,14 +19,14 @@ user/data/*
 user/accounts/*
 !user/accounts/.*
 
-# local cofig and security
+# local config and security
 user/localhost/config/security.yaml
 user/config/security.yaml
 user/config/site.yaml
 user/config/system.yaml
 user/config/plugins/email.yaml
 
-#specific .htaccess -> dists in webserver-congifs
+#specific .htaccess -> dists in webserver-configs
 .htaccess
 
 tests/_output/*
@@ -52,12 +51,6 @@ pids
 *.seed
 *.pid.lock
 
-# nyc test coverage
-.nyc_output
-
-# node-waf configuration
-.lock-wscript
-
 # Dependency directories
 node_modules
 jspm_packages
@@ -67,11 +60,3 @@ jspm_packages
 
 # Optional eslint cache
 .eslintcache
-
-# Optional REPL history
-.node_repl_history
-.idea/hammes.iml
-.idea/modules.xml
-.idea/workspace.xml
-.idea/dictionaries/Sebastian.xml
-.idea/inspectionProfiles/Project_Default.xml
